@@ -1,0 +1,9 @@
+{
+  "name": "ctf-hack",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "bench": "node benchmarks/run.js"
+  }
+}
