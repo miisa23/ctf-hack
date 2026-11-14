@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/admin.css" />
+    <title>Admin · ctf-hack</title>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="me">
+          <div class="av">AD</div>
+          <div>
+            <b>admin</b><br /><span class="mono">platform manager</span>
+          </div>
+        </div>
+        <a class="on" href="/ctf-hack/pages/admin.html"
+          >Pending events <span class="badge">2</span></a
+        ><a href="/ctf-hack/pages/admin.html#cats">Categories</a><a href="/ctf-hack/pages/admin.html#users">Accounts</a
+        ><a href="/ctf-hack/pages/admin.html#events">All events</a><a href="/ctf-hack/pages/login.html">Log out</a>
+      </aside>
+      <div class="main">
+        <div class="top">
+          <input type="search" placeholder="Search users or events" />
+        </div>
+        <div class="tiles">
+          <div class="tile"><b>128</b><span>users</span></div>
+          <div class="tile m"><b>9</b><span>approved events</span></div>
+          <div class="tile g"><b>2</b><span>pending events</span></div>
+          <div class="tile p"><b>8</b><span>categories</span></div>
+        </div>
+        <div class="panel">
+          <h3>Pending event submissions</h3>
+          <div class="scroll">
+            <table>
+              <tr>
+                <th>Event</th>
+                <th>Organizer</th>
+                <th>Format</th>
+                <th>Dates</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Registan Cup</td>
+                <td>samarkand_sec</td>
+                <td>jeopardy</td>
+                <td>20–21 Dec</td>
+                <td><span class="pill pending">pending</span></td>
+                <td class="act">
+                  <a class="btn fill sm" href="#">Approve</a
+                  ><a class="btn red sm" href="#">Reject</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Night Shift CTF</td>
+                <td>cau_club</td>
+                <td>mixed</td>
+                <td>9–10 Jan</td>
+                <td><span class="pill pending">pending</span></td>
+                <td class="act">
+                  <a class="btn fill sm" href="#">Approve</a
+                  ><a class="btn red sm" href="#">Reject</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="duo">
+          <div class="panel" id="cats">
+            <h3>Challenge categories</h3>
+            <div class="chips" style="margin-bottom: 14px">
+              <span class="chip on">web</span><span class="chip on">crypto</span
+              ><span class="chip on">osint</span
+              ><span class="chip on">stego</span
+              ><span class="chip on">forensics</span
+              ><span class="chip on">reverse</span
+              ><span class="chip on">pwn</span><span class="chip on">misc</span>
+            </div>
+            <div class="two">
+              <input placeholder="New category name" /><a
+                class="btn fill sm"
+                href="#"
+                style="text-align: center"
+                >Add category</a
+              >
+            </div>
+          </div>
+          <div class="panel" id="users">
+            <h3>Accounts</h3>
+            <div class="list">
+              <div class="item">
+                <span
+                  >null_ptr<br /><span class="mono">UZ · advanced</span></span
+                ><span class="act"
+                  ><a class="btn sm" href="#">Make admin</a
+                  ><a class="btn red sm" href="#">Delete</a></span
+                >
+              </div>
+              <div class="item">
+                <span
+                  >cipher_cat<br /><span class="mono"
+                    >KZ · intermediate</span
+                  ></span
+                ><span class="act"
+                  ><a class="btn sm" href="#">Make admin</a
+                  ><a class="btn red sm" href="#">Delete</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

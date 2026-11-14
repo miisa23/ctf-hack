@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/login.css" />
+    <title>Log in · ctf-hack</title>
+  </head>
+  <body>
+    <div class="center-page">
+      <div class="glass">
+        <div class="mark">ctf</div>
+        <h2>Welcome back</h2>
+        <p class="sub" style="margin: 0">
+          Log in to find teammates and register for events.
+        </p>
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="e">Email or username</label><input id="e" />
+          </div>
+          <div class="field">
+            <label for="p">Password</label><input id="p" type="password" />
+          </div>
+          <label class="check"
+            ><input type="checkbox" /> Keep me logged in</label
+          ><button class="btn fill block">Log in</button>
+        </form>
+        <p class="sub" style="margin: 18px 0 0; font-size: 14px">
+          New here?
+          <a href="/ctf-hack/pages/register.html" style="color: var(--mint)"
+            >Create an account</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/leaderboard.css" />
+    <title>Leaderboard · ctf-hack</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="links">
+          <a href="/ctf-hack/pages/events.html">Events</a><a href="/ctf-hack/pages/users.html">Players</a
+          ><a href="/ctf-hack/pages/leaderboard.html" class="on">Leaderboard</a
+          ><a href="/ctf-hack/pages/dashboard.html">My dashboard</a>
+        </div>
+        <div class="nb">
+          <a class="btn ghost sm" href="/ctf-hack/pages/login.html">Log in</a
+          ><a class="btn fill sm" href="/ctf-hack/pages/register.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero center">
+      <div class="wrap">
+        <h1>Leaderboard</h1>
+        <p class="lead">
+          Team scores from <b>CyberHack 2026</b>. Next event starts in:
+        </p>
+        <div class="count" id="cd">
+          <div><b>--</b><small>days</small></div>
+          <div><b>--</b><small>hours</small></div>
+          <div><b>--</b><small>minutes</small></div>
+          <div><b>--</b><small>seconds</small></div>
+        </div>
+        <div class="cta">
+          <a class="btn fill" href="/ctf-hack/pages/events.html">Register your team</a
+          ><a class="btn ghost" href="/ctf-hack/pages/users.html">Find teammates</a>
+        </div>
+        <div class="podium">
+          <div class="pod">
+            <span class="rk">#2</span>
+            <div class="av">CC</div>
+            <h4>cipher_cats</h4>
+            <span class="mono">KZ</span><b>1,440</b>
+          </div>
+          <div class="pod first">
+            <span class="rk">#1</span>
+            <div class="av">NP</div>
+            <h4>null_pointers</h4>
+            <span class="mono">UZ</span><b>1,880</b>
+          </div>
+          <div class="pod">
+            <span class="rk">#3</span>
+            <div class="av">SS</div>
+            <h4>stack_smashers</h4>
+            <span class="mono">KZ</span><b>1,000</b>
+          </div>
+          <div class="pod">
+            <span class="rk">#4</span>
+            <div class="av">PL</div>
+            <h4>packet_loss</h4>
+            <span class="mono">UZ</span><b>800</b>
+          </div>
+          <div class="pod">
+            <span class="rk">#5</span>
+            <div class="av">GG</div>
+            <h4>geo_guessers</h4>
+            <span class="mono">DE</span><b>600</b>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrap">
+        <div class="filters">
+          <select>
+            <option>CyberHack 2026</option>
+            <option>Silk Road CTF</option>
+            <option>Bushbash Open</option></select
+          ><select>
+            <option>All team types</option>
+            <option>permanent</option>
+            <option>temporary</option>
+          </select>
+        </div>
+        <div class="rows">
+          <div class="row head">
+            <span>#</span><span>Team</span><span>Captain</span><span>Type</span
+            ><span style="text-align: right">Score</span>
+          </div>
+          <div class="row top">
+            <span class="rank">1</span
+            ><span class="who"><span class="av">NP</span>null_pointers</span
+            ><span>null_ptr</span
+            ><span><span class="pill advanced">permanent</span></span
+            ><span class="score">1,880</span>
+          </div>
+          <div class="row">
+            <span class="rank">2</span
+            ><span class="who"><span class="av">CC</span>cipher_cats</span
+            ><span>cipher_cat</span
+            ><span><span class="pill intermediate">temporary</span></span
+            ><span class="score">1,440</span>
+          </div>
+          <div class="row">
+            <span class="rank">3</span
+            ><span class="who"><span class="av">SS</span>stack_smashers</span
+            ><span>stack_smash</span
+            ><span><span class="pill advanced">permanent</span></span
+            ><span class="score">1,000</span>
+          </div>
+          <div class="row">
+            <span class="rank">4</span
+            ><span class="who"><span class="av">PL</span>packet_loss</span
+            ><span>packet_loss</span
+            ><span><span class="pill intermediate">temporary</span></span
+            ><span class="score">800</span>
+          </div>
+          <div class="row">
+            <span class="rank">5</span
+            ><span class="who"><span class="av">GG</span>geo_guessers</span
+            ><span>geo_guess</span
+            ><span><span class="pill intermediate">temporary</span></span
+            ><span class="score">600</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <span>ctf-hack · CAU Tashkent semester project</span
+        ><span>Node.js · Express · PostgreSQL</span>
+      </div>
+    </footer>
+    <script>
+      var t = new Date("2026-11-20T09:00:00+05:00");
+      function k() {
+        var d = Math.max(0, t - new Date()),
+          v = [
+            Math.floor(d / 864e5),
+            Math.floor(d / 36e5) % 24,
+            Math.floor(d / 6e4) % 60,
+            Math.floor(d / 1e3) % 60,
+          ];
+        document.querySelectorAll("#cd b").forEach(function (b, i) {
+          b.textContent = String(v[i]).padStart(2, "0");
+        });
+      }
+      k();
+      setInterval(k, 1000);
+    </script>
+  </body>
+</html>

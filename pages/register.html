@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/register.css" />
+    <title>Sign up · ctf-hack</title>
+  </head>
+  <body>
+    <div class="auth">
+      <div class="side">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <h1 style="font-size: 36px">Get started with us</h1>
+        <p class="lead" style="margin: 0">
+          Three short steps to your first team.
+        </p>
+        <div class="step on">1. Create your account</div>
+        <div class="step">2. Pick your specialties</div>
+        <div class="step">3. Set your level and country</div>
+      </div>
+      <div class="form">
+        <h2>Create account</h2>
+        <p class="sub">Enter your details to join the network.</p>
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="u">Username</label
+            ><input id="u" maxlength="30" placeholder="e.g. null_ptr" />
+          </div>
+          <div class="field">
+            <label for="e">Email</label
+            ><input id="e" type="email" placeholder="e.g. you@mail.com" />
+          </div>
+          <div class="field">
+            <label for="p">Password</label
+            ><input
+              id="p"
+              type="password"
+              minlength="8"
+              placeholder="Enter your password"
+            />
+            <p class="hint">Must be at least 8 characters.</p>
+          </div>
+          <button class="btn fill block">Sign up</button>
+        </form>
+        <p class="sub" style="text-align: center; margin: 18px 0 0">
+          Already have an account?
+          <a href="/ctf-hack/pages/login.html" style="color: var(--mint)">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

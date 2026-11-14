@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/events.css" />
+    <title>Events · ctf-hack</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="links">
+          <a href="/ctf-hack/pages/events.html" class="on">Events</a
+          ><a href="/ctf-hack/pages/users.html">Players</a
+          ><a href="/ctf-hack/pages/leaderboard.html">Leaderboard</a
+          ><a href="/ctf-hack/pages/dashboard.html">My dashboard</a>
+        </div>
+        <div class="nb">
+          <a class="btn ghost sm" href="/ctf-hack/pages/login.html">Log in</a
+          ><a class="btn fill sm" href="/ctf-hack/pages/register.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="wrap">
+        <h1>Upcoming events</h1>
+        <p class="lead">
+          Only admin-approved events appear here, with the challenge categories
+          they feature.
+        </p>
+        <div class="cta">
+          <a class="btn fill" href="/ctf-hack/pages/dashboard.html#submit">Submit an event</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrap">
+        <div class="filters">
+          <input type="search" placeholder="Search events" /><select>
+            <option value="">All formats</option>
+            <option>jeopardy</option>
+            <option>attack-defense</option>
+            <option>mixed</option></select
+          ><select>
+            <option value="">All categories</option>
+            <option>web</option>
+            <option>crypto</option>
+            <option>osint</option>
+            <option>stego</option>
+            <option>forensics</option>
+            <option>reverse</option>
+            <option>pwn</option>
+            <option>misc</option>
+          </select>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="meta">
+              <span class="pill jeopardy">jeopardy</span
+              ><span class="mono">20–21 Nov 2026</span>
+            </div>
+            <h3>CyberHack 2026</h3>
+            <p>Hosted by CAU Club</p>
+            <div class="chips">
+              <span class="chip">web</span><span class="chip">crypto</span
+              ><span class="chip">osint</span><span class="chip">stego</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/dashboard.html">Register team</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <span class="pill attack-defense">attack-defense</span
+              ><span class="mono">5–6 Dec 2026</span>
+            </div>
+            <h3>Silk Road CTF</h3>
+            <p>Hosted by Tashkent Security Lab</p>
+            <div class="chips">
+              <span class="chip">pwn</span><span class="chip">reverse</span
+              ><span class="chip">forensics</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/dashboard.html">Register team</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <span class="pill mixed">mixed</span
+              ><span class="mono">12–13 Dec 2026</span>
+            </div>
+            <h3>Bushbash Open</h3>
+            <p>Hosted by CSSA</p>
+            <div class="chips">
+              <span class="chip">osint</span><span class="chip">stego</span
+              ><span class="chip">misc</span><span class="chip">web</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/dashboard.html">Register team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <span>ctf-hack · CAU Tashkent semester project</span
+        ><span>Node.js · Express · PostgreSQL</span>
+      </div>
+    </footer>
+  </body>
+</html>

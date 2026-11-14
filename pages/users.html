@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/users.css" />
+    <title>Players · ctf-hack</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="links">
+          <a href="/ctf-hack/pages/events.html">Events</a
+          ><a href="/ctf-hack/pages/users.html" class="on">Players</a
+          ><a href="/ctf-hack/pages/leaderboard.html">Leaderboard</a
+          ><a href="/ctf-hack/pages/dashboard.html">My dashboard</a>
+        </div>
+        <div class="nb">
+          <a class="btn ghost sm" href="/ctf-hack/pages/login.html">Log in</a
+          ><a class="btn fill sm" href="/ctf-hack/pages/register.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="wrap">
+        <h1>Find your teammates</h1>
+        <p class="lead">
+          Filter the player network by specialty, level and country, then send a
+          grouping request.
+        </p>
+      </div>
+    </header>
+    <section>
+      <div class="wrap">
+        <div class="filters">
+          <input type="search" placeholder="Search by username" /><select>
+            <option value="">All categories</option>
+            <option>web</option>
+            <option>crypto</option>
+            <option>osint</option>
+            <option>stego</option>
+            <option>forensics</option>
+            <option>reverse</option>
+            <option>pwn</option>
+            <option>misc</option></select
+          ><select>
+            <option value="">All levels</option>
+            <option>beginner</option>
+            <option>intermediate</option>
+            <option>advanced</option></select
+          ><select>
+            <option value="">All countries</option>
+            <option>UZ</option>
+            <option>KZ</option>
+            <option>KG</option>
+            <option>TJ</option>
+            <option>TR</option>
+            <option>DE</option></select
+          ><span class="mono">8 players</span>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">NU</div>
+                <div>
+                  <h3>null_ptr</h3>
+                  <span class="mono">UZ</span>
+                </div>
+              </div>
+              <span class="pill advanced">advanced</span>
+            </div>
+            <div class="chips">
+              <span class="chip on">pwn</span
+              ><span class="chip on">reverse</span>
+            </div>
+            <p>Pwn &amp; reverse specialist.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">CI</div>
+                <div>
+                  <h3>cipher_cat</h3>
+                  <span class="mono">KZ</span>
+                </div>
+              </div>
+              <span class="pill intermediate">intermediate</span>
+            </div>
+            <div class="chips">
+              <span class="chip on">crypto</span
+              ><span class="chip on">misc</span>
+            </div>
+            <p>Loves number theory puzzles.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">PI</div>
+                <div>
+                  <h3>pixel_ghost</h3>
+                  <span class="mono">KG</span>
+                </div>
+              </div>
+              <span class="pill beginner">beginner</span>
+            </div>
+            <div class="chips">
+              <span class="chip on">stego</span
+              ><span class="chip on">osint</span>
+            </div>
+            <p>First year, learning fast.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">PA</div>
+                <div>
+                  <h3>packet_loss</h3>
+                  <span class="mono">UZ</span>
+                </div>
+              </div>
+              <span class="pill intermediate">intermediate</span>
+            </div>
+            <div class="chips">
+              <span class="chip on">forensics</span
+              ><span class="chip on">web</span>
+            </div>
+            <p>Wireshark all day.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">RO</div>
+                <div>
+                  <h3>rootkit_rose</h3>
+                  <span class="mono">TR</span>
+                </div>
+              </div>
+              <span class="pill advanced">advanced</span>
+            </div>
+            <div class="chips">
+              <span class="chip on">web</span><span class="chip on">pwn</span>
+            </div>
+            <p>Bug bounty hobbyist.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <div class="who">
+                <div class="av">BA</div>
+                <div>
+                  <h3>base64_bee</h3>
+                  <span class="mono">TJ</span>
+                </div>
+              </div>
+              <span class="pill beginner">beginner</span>
+            </div>
+            <div class="chips"><span class="chip on">crypto</span></div>
+            <p>Looking for a first team.</p>
+            <a class="btn sm" href="#">Send request</a>
+          </div>
+        </div>
+        <div class="pager">
+          <a href="#">‹</a><a class="on" href="#">1</a><a href="#">2</a
+          ><a href="#">›</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <span>ctf-hack · CAU Tashkent semester project</span
+        ><span>Node.js · Express · PostgreSQL</span>
+      </div>
+    </footer>
+  </body>
+</html>

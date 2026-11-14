@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/index.css" />
+    <title>ctf-hack · Event hub &amp; teammate matching</title>
+  </head>
+  <body>
+    <nav>
+      <div class="wrap">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="links">
+          <a href="/ctf-hack/pages/events.html">Events</a><a href="/ctf-hack/pages/users.html">Players</a
+          ><a href="/ctf-hack/pages/leaderboard.html">Leaderboard</a
+          ><a href="/ctf-hack/pages/dashboard.html">My dashboard</a>
+        </div>
+        <div class="nb">
+          <a class="btn ghost sm" href="/ctf-hack/pages/login.html">Log in</a
+          ><a class="btn fill sm" href="/ctf-hack/pages/register.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <header class="hero split">
+      <div class="wrap">
+        <div>
+          <h1>Every CTF in one place. Your perfect team, one search away.</h1>
+          <p class="lead">
+            Stop hunting for teammates in scattered Discord and Telegram chats.
+            Build a skill profile, filter players by category, level and
+            country, and register your team for the next event.
+          </p>
+          <div class="cta">
+            <a class="btn fill" href="/ctf-hack/pages/users.html">Find teammates</a
+            ><a class="btn ghost" href="/ctf-hack/pages/events.html">Browse events</a>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            background: rgba(15, 17, 23, 0.85);
+            border-color: rgba(16, 251, 205, 0.35);
+          "
+        >
+          <div class="who">
+            <div class="av">N7</div>
+            <div>
+              <h3>null_ptr</h3>
+              <span class="mono">UZ · advanced</span>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip on">pwn</span><span class="chip on">reverse</span>
+          </div>
+          <span class="mono" style="color: var(--pink)"
+            >looking for: crypto, forensics</span
+          >
+          <div class="chips">
+            <span class="chip">temporary team</span
+            ><span class="chip">CyberHack 2026</span>
+          </div>
+          <a class="btn fill sm" href="/ctf-hack/pages/users.html">Send grouping request</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrap">
+        <h2>Upcoming events</h2>
+        <p class="sub">Only admin-approved events appear here.</p>
+        <div class="cards">
+          <div class="card">
+            <div class="meta">
+              <span class="pill jeopardy">jeopardy</span
+              ><span class="mono">20–21 Nov</span>
+            </div>
+            <h3>CyberHack 2026</h3>
+            <p>Hosted by CAU Club</p>
+            <div class="chips">
+              <span class="chip">web</span><span class="chip">crypto</span
+              ><span class="chip">osint</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/events.html">View event</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <span class="pill attack-defense">attack-defense</span
+              ><span class="mono">5–6 Dec</span>
+            </div>
+            <h3>Silk Road CTF</h3>
+            <p>Hosted by Tashkent Security Lab</p>
+            <div class="chips">
+              <span class="chip">pwn</span><span class="chip">reverse</span
+              ><span class="chip">forensics</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/events.html">View event</a>
+          </div>
+          <div class="card">
+            <div class="meta">
+              <span class="pill mixed">mixed</span
+              ><span class="mono">12–13 Dec</span>
+            </div>
+            <h3>Bushbash Open</h3>
+            <p>Hosted by CSSA</p>
+            <div class="chips">
+              <span class="chip">osint</span><span class="chip">stego</span
+              ><span class="chip">web</span>
+            </div>
+            <a class="btn sm" href="/ctf-hack/pages/events.html">View event</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding-top: 0">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <p class="sub">From sign-up to scoreboard in four steps.</p>
+        <div class="grid4">
+          <div class="step">
+            <h3>1. Build a profile</h3>
+            <p>Pick your specialties, level and country.</p>
+          </div>
+          <div class="step">
+            <h3>2. Search by skill</h3>
+            <p>Find players who complement yours, like pwn + crypto.</p>
+          </div>
+          <div class="step">
+            <h3>3. Send a request</h3>
+            <p>
+              Invite to a temporary team for one event, or a permanent team.
+            </p>
+          </div>
+          <div class="step">
+            <h3>4. Register and compete</h3>
+            <p>Captains register the team for approved events.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding-top: 0">
+      <div class="wrap">
+        <div class="cta2">
+          <h2>Ready to find your team?</h2>
+          <a class="btn fill" href="/ctf-hack/pages/register.html">Create your profile</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrap">
+        <span>ctf-hack · CAU Tashkent semester project</span
+        ><span>Node.js · Express · PostgreSQL</span>
+      </div>
+    </footer>
+  </body>
+</html>

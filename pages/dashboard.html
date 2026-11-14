@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/ctf-hack/styles/dashboard.css" />
+    <title>My dashboard · ctf-hack</title>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="logo" href="/ctf-hack/pages/index.html">ctf<b>-</b>hack</a>
+        <div class="me">
+          <div class="av">NU</div>
+          <div><b>null_ptr</b><br /><span class="mono">player</span></div>
+        </div>
+        <a class="on" href="/ctf-hack/pages/dashboard.html">Profile</a
+        ><a href="/ctf-hack/pages/dashboard.html#teams">My teams</a
+        ><a href="/ctf-hack/pages/dashboard.html#requests">Requests <span class="badge">3</span></a
+        ><a href="/ctf-hack/pages/events.html">Events</a><a href="/ctf-hack/pages/users.html">Find players</a
+        ><a href="/ctf-hack/pages/dashboard.html#submit">Submit event</a><a href="/ctf-hack/pages/login.html">Log out</a>
+      </aside>
+      <div class="main">
+        <div class="top">
+          <input type="search" placeholder="Search players or events" /><a
+            class="btn fill sm"
+            href="#teams"
+            >New team</a
+          >
+        </div>
+        <div class="tiles">
+          <div class="tile"><b>2</b><span>teams</span></div>
+          <div class="tile m"><b>3</b><span>pending requests</span></div>
+          <div class="tile g"><b>1</b><span>events registered</span></div>
+          <div class="tile p"><b>6</b><span>specialties</span></div>
+        </div>
+        <div class="duo">
+          <div class="panel">
+            <h3>Edit profile</h3>
+            <form onsubmit="return false;">
+              <div class="two">
+                <div class="field">
+                  <label>Username</label><input value="null_ptr" />
+                </div>
+                <div class="field">
+                  <label>Country</label
+                  ><select>
+                    <option>UZ</option>
+                    <option>KZ</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label>Level</label
+                ><select>
+                  <option>beginner</option>
+                  <option>intermediate</option>
+                  <option selected>advanced</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Specialties</label>
+                <div class="chips">
+                  <span class="chip on">pwn</span
+                  ><span class="chip on">reverse</span
+                  ><span class="chip">web</span><span class="chip">crypto</span
+                  ><span class="chip">osint</span><span class="chip">stego</span
+                  ><span class="chip">forensics</span
+                  ><span class="chip">misc</span>
+                </div>
+              </div>
+              <div class="field">
+                <label>Bio</label
+                ><textarea rows="3">Pwn &amp; Reverse Specialist</textarea>
+              </div>
+              <button class="btn fill">Save changes</button>
+            </form>
+          </div>
+          <div class="panel" id="requests">
+            <h3>Grouping requests</h3>
+            <div class="list">
+              <div class="item">
+                <span
+                  ><b>cipher_cats</b><br /><span class="mono"
+                    >temporary · CyberHack 2026</span
+                  ></span
+                ><span class="act"
+                  ><a class="btn fill sm" href="#">Accept</a
+                  ><a class="btn red sm" href="#">Reject</a></span
+                >
+              </div>
+              <div class="item">
+                <span
+                  ><b>stack_smashers</b><br /><span class="mono"
+                    >permanent</span
+                  ></span
+                ><span class="act"
+                  ><a class="btn fill sm" href="#">Accept</a
+                  ><a class="btn red sm" href="#">Reject</a></span
+                >
+              </div>
+              <div class="item">
+                <span
+                  ><b>geo_guessers</b><br /><span class="mono"
+                    >temporary · Bushbash Open</span
+                  ></span
+                ><span class="act"
+                  ><a class="btn fill sm" href="#">Accept</a
+                  ><a class="btn red sm" href="#">Reject</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel" id="teams">
+          <h3>My teams</h3>
+          <div class="scroll">
+            <table>
+              <tr>
+                <th>Team</th>
+                <th>Type</th>
+                <th>Event</th>
+                <th>Captain</th>
+                <th>Members</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>null_pointers</td>
+                <td><span class="pill advanced">permanent</span></td>
+                <td>–</td>
+                <td>you</td>
+                <td>3</td>
+                <td><a class="btn sm" href="#">Invite player</a></td>
+              </tr>
+              <tr>
+                <td>cyber_duo</td>
+                <td><span class="pill intermediate">temporary</span></td>
+                <td>CyberHack 2026</td>
+                <td>cipher_cat</td>
+                <td>2</td>
+                <td><a class="btn sm" href="/ctf-hack/pages/events.html">Register</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="panel" id="submit">
+          <h3>Submit an event</h3>
+          <form onsubmit="return false;">
+            <div class="two">
+              <div class="field"><label>Title</label><input /></div>
+              <div class="field"><label>Organization</label><input /></div>
+            </div>
+            <div class="two">
+              <div class="field">
+                <label>Start</label><input type="datetime-local" />
+              </div>
+              <div class="field">
+                <label>End</label><input type="datetime-local" />
+              </div>
+            </div>
+            <div class="field">
+              <label>Format</label
+              ><select>
+                <option>jeopardy</option>
+                <option>attack-defense</option>
+                <option>mixed</option>
+              </select>
+            </div>
+            <p class="hint" style="margin: 0 0 14px">
+              New events stay pending until an admin approves them.
+            </p>
+            <button class="btn fill">Submit for approval</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
