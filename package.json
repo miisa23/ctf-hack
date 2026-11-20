@@ -3,7 +3,27 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "start": "node src/server.js",
     "test": "node --test",
     "bench": "node benchmarks/run.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miisa23/ctf-hack.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/miisa23/ctf-hack/issues"
+  },
+  "homepage": "https://github.com/miisa23/ctf-hack#readme",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
   }
 }

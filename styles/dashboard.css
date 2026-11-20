@@ -314,6 +314,9 @@ label {
 }
 .sidebar .logo {
   margin-bottom: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 .sidebar .me {
   display: flex;
@@ -342,7 +345,10 @@ label {
   color: #240016;
   border-radius: 99px;
   font: 700 11px var(--mono);
-  padding: 0 8px;
+  padding: 0px 8px;
+  align-items:center; 
+  justify-content:center;
+  display:flex;
 }
 .main {
   display: grid;
